@@ -106,7 +106,4 @@ section h2 {
     color: #888;
 }
 
-/* Optional: Section Trennung */
-section + section {
-    border-top: 2px solid #444;
-}
+
