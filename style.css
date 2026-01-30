@@ -1,50 +1,112 @@
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    padding-top: 70px; /* Platz für fixed navbar */
-}
-
-.navbar .nav-link {
-    margin-left: 1rem;  /* Abstand nach links */
-    margin-right: 1rem; /* Abstand nach rechts */
-}
-
+/* Hero Header */
 .hero {
-    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
-    color: white;
-    padding: 4rem 0;
+    background-color: #111; /* dunkler Header-Hintergrund */
+    color: #fff;
+    padding: 100px 20px 80px 20px; /* viel Padding oben für lesbare Fläche */
+    text-align: center;
 }
 
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero p.lead {
+    font-size: 1.25rem;
+    color: #ccc;
+}
+
+/* Allgemeine Section-Stile */
 section {
-    scroll-margin-top: 80px;
+    padding: 60px 20px;
+    position: relative;
 }
 
+section h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #ffffff50; /* leichte Linie unter Header */
+    padding-bottom: 10px;
+}
+
+/* Jede Section leicht abwechselnd mit dunklem Hintergrund */
+#about {
+    background-color: #1a1a1a; /* dunkler Hintergrund */
+    color: #ffffff;
+}
+
+#projects {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#education {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#experience {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+#contact {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* Card Styling */
 .card {
-    border: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: #222; /* dunklere Cards */
+    border: 1px solid #444;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.card-body h5, .card-body h6 {
+    color: #f1f1f1;
+}
+
+.card-body p {
+    color: #ccc;
+}
+
+/* Buttons in Cards */
+.card-body .btn {
+    border-radius: 20px;
+}
+
+.card-body .btn-outline-light {
+    color: #fff;
+    border-color: #fff;
+}
+
+.card-body .btn-outline-light:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* Galerie-Button zentrieren (falls nicht schon) */
+.project-thumb + .card-body .d-flex {
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Footer */
 .footer {
-    background-color: #f5f5f5;
-    padding: 1rem 0;
-    margin-top: 3rem;
+    padding: 20px 0;
+    background-color: #111;
+    color: #888;
 }
 
-/* Projektbilder klickbar machen und Hover-Effekt */
-.project-thumb {
-    cursor: pointer;                   /* Zeigt an, dass man klicken kann */
-    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
-}
-
-.project-thumb:hover {
-    transform: scale(1.02);            /* Leicht vergrößern beim Hover */
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);  /* Schatteneffekt */
-    opacity: 0.9;                      /* Optional: leicht transparent */
-}
-.project-thumb:active {
-    transform: scale(0.98);            /* Leicht verkleinern beim Klicken */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);  /* Weniger Schatten beim Klicken */
+/* Optional: Section Trennung */
+section + section {
+    border-top: 2px solid #444;
 }
