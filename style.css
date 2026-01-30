@@ -7,6 +7,11 @@ body {
     padding-top: 70px; /* Platz für fixed navbar */
 }
 
+.navbar .nav-link {
+    margin-left: 1rem;  /* Abstand nach links */
+    margin-right: 1rem; /* Abstand nach rechts */
+}
+
 .hero {
     background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
     color: white;

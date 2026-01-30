@@ -11,6 +11,9 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 <body id="top">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -22,7 +25,7 @@
             <a class="nav-link d-inline text-light" href="#experience">Experience</a>
             <a class="nav-link d-inline text-light" href="#projects">Projects</a>
             <a class="nav-link d-inline text-light" href="#contact">Contact</a>
-            <a href="CV_Dustin_Goerg" class="btn btn-outline-light btn-sm ms-3" download>Download CV</a>
+            <a href="CV_Dustin_Goerg.pdf" class="btn btn-outline-light btn-sm ms-3" download>Download CV</a>
         </div>
     </div>
 </nav>
@@ -39,7 +42,7 @@
     <p>
         I am a Junior Software Developer with a Bachelor’s degree in Computer Science.
         My expertise lies in software engineering, with a strong focus on algorithms, object-oriented design, and the development of structured, maintainable systems.
-        In addition to development, I have experience in IT consulting and software packaging. I create software packages for distribution via SCCM and Intune using PSADT scripts, providing practical, reliable solutions for network systems in a freelance capacity.
+        In addition to development, I have experience in IT consulting and software packaging. I create software packages for distribution via SCCM and Intune using PSADT scripts, providing practical, reliable solutions for network systems in a freelance capacity. <br>
         This website serves as a portfolio to showcase my projects, technical skills, and practical experience in software engineering.
     </p>
 </section>
@@ -51,14 +54,14 @@
         <!-- Project 1 -->
         <div class="col-md-6">
             <div class="card">
-                <img src="images/blackjack.jpg" class="card-img-top" alt="Blackjack Trainer Screenshot">
+                <img src="images/blackjack1.png" class="card-img-top project-thumb" alt="Blackjack Trainer" data-bs-toggle="modal" data-bs-target="#project1Modal">
                 <div class="card-body">
                     <h5 class="card-title">Blackjack Trainer</h5>
                     <p class="card-text">
                         A blackjack training game built with Unreal Engine.
                     </p>
-                    <a href="https://github.com/Dus00" class="btn btn-outline-primary btn-sm" target="_blank">
-                        GitHub
+                    <a href="https://www.dropbox.com/scl/fo/r9s25hqwe9xidcl4zdwpk/AIdqoKa5hVrhTpVovGn10eA?rlkey=0s8f9dchm324rhjmfl0kh6imx&st=qo7vqciy&dl=0" class="btn btn-outline-primary btn-sm" target="_blank">
+                        Download Showcase
                     </a>
                 </div>
             </div>
@@ -67,7 +70,7 @@
         <!-- Project 2 -->
         <div class="col-md-6">
             <div class="card">
-                <img src="images/project2.jpg" class="card-img-top" alt="Project Screenshot">
+                <img src="images/project2_thumb.jpg" class="card-img-top project-thumb" alt="Another Project" data-bs-toggle="modal" data-bs-target="#project2Modal">
                 <div class="card-body">
                     <h5 class="card-title">Another Project</h5>
                     <p class="card-text">
@@ -78,6 +81,78 @@
         </div>
     </div>
 </section>
+
+<!-- Modals -->
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div id="carouselProject1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/blackjack1.png" class="d-block w-100" alt="Blackjack Screenshot 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/blackjack2.png" class="d-block w-100" alt="Blackjack Screenshot 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/blackjack3.png" class="d-block w-100" alt="Blackjack Screenshot 3">
+            </div>
+            <div class="carousel-item active">
+              <img src="images/blackjack4.png" class="d-block w-100" alt="Blackjack Screenshot 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/blackjack5.png" class="d-block w-100" alt="Blackjack Screenshot 2">
+            </div>
+            <div class="carousel-item">
+              <img src="images/blackjack6.png" class="d-block w-100" alt="Blackjack Screenshot 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProject1" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div id="carouselProject2" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="images/project2_1.jpg" class="d-block w-100" alt="Project2 Screenshot 1">
+            </div>
+            <div class="carousel-item">
+              <img src="images/project2_2.jpg" class="d-block w-100" alt="Project2 Screenshot 2">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselProject2" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <section id="contact" class="container my-5">
     <h2>Contact</h2>
