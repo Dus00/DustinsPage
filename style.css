@@ -32,3 +32,19 @@ section {
     padding: 1rem 0;
     margin-top: 3rem;
 }
+
+/* Projektbilder klickbar machen und Hover-Effekt */
+.project-thumb {
+    cursor: pointer;                   /* Zeigt an, dass man klicken kann */
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+}
+
+.project-thumb:hover {
+    transform: scale(1.02);            /* Leicht vergrößern beim Hover */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);  /* Schatteneffekt */
+    opacity: 0.9;                      /* Optional: leicht transparent */
+}
+.project-thumb:active {
+    transform: scale(0.98);            /* Leicht verkleinern beim Klicken */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);  /* Weniger Schatten beim Klicken */
+}
