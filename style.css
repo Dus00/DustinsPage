@@ -6,7 +6,7 @@ html {
 .hero {
     background-color: #111; /* dunkler Header-Hintergrund */
     color: #fff;
-    padding: 100px 20px 80px 20px; /* viel Padding oben für lesbare Fläche */
+    padding: 100px 20px 0px 20px; /* viel Padding oben für lesbare Fläche */
     text-align: center;
 }
 
@@ -35,7 +35,6 @@ section h2 {
     padding-bottom: 10px;
 }
 
-/* Jede Section leicht abwechselnd mit dunklem Hintergrund */
 #about {
     background-color: #1a1a1a; /* dunkler Hintergrund */
     color: #ffffff;
@@ -110,4 +109,3 @@ section h2 {
     background-color: #111;
     color: #888;
 }
-
