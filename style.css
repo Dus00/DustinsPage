@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 80px; /* Höhe der Navbar + ein kleiner Puffer */
+}
+
 /* Hero Header */
 .hero {
     background-color: #111; /* dunkler Header-Hintergrund */
@@ -18,8 +22,9 @@
 
 /* Allgemeine Section-Stile */
 section {
-    padding: 60px 20px;
+    padding: 25px;
     position: relative;
+    border-top: 2px solid #444;
 }
 
 section h2 {
@@ -105,5 +110,4 @@ section h2 {
     background-color: #111;
     color: #888;
 }
-
 
