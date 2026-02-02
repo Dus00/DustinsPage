@@ -111,6 +111,23 @@ section h2 {
     margin-bottom: 15px;
 }
 
+#contact a.btn {
+    transition: transform 0.2s, background-color 0.2s, color 0.2s;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+#contact a.btn:hover {
+    transform: translateY(-3px);
+    background-color: #fff;
+    color: #111;
+}
+
+#contact i {
+    font-size: 1.2rem;
+}
+
+
 /* Footer */
 .footer {
     background-color: #111;
