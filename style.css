@@ -1,5 +1,6 @@
 html {
     scroll-padding-top: 80px; /* Höhe der Navbar + ein kleiner Puffer */
+    background-color: #1a1a1a;
 }
 
 /* Hero Header */
