@@ -30,6 +30,7 @@ section {
     padding: 25px;
     position: relative;
     border-top: 2px solid #444;
+    margin: 0; 
 }
 
 section h2 {
