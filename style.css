@@ -3,6 +3,10 @@ html {
     background-color: #1a1a1a;
 }
 
+body {
+    background-color: #1a1a1a; /* dunkler Hintergrund */ 
+}
+
 /* Hero Header */
 .hero {
     background-color: #111; /* dunkler Header-Hintergrund */
