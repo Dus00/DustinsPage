@@ -7,6 +7,10 @@ body {
     background-color: #1a1a1a; /* dunkler Hintergrund */ 
 }
 
+main {
+    flex: 1; /* Content dehnt sich aus, Footer unten sichtbar */
+}
+
 /* Hero Header */
 .hero {
     background-color: #111; /* dunkler Header-Hintergrund */
@@ -109,7 +113,43 @@ section h2 {
 
 /* Footer */
 .footer {
-    padding: 20px 0;
     background-color: #111;
     color: #888;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;   /* bleibt unter Content */
+    bottom: 0; 
 }
+
+/* Modal-Größe */
+.modal-dialog {
+    max-width: 900px;
+    width: 90%;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #111;
+}
+
+/* Carousel Items fixieren */
+.carousel-item {
+    width: 100%;
+    height: 500px;           /* feste Höhe */
+    display: flex;
+    align-items: center;     /* vertikal zentrieren */
+    justify-content: center; /* horizontal zentrieren */
+    background-color: #111;  /* leere Flächen dunkel */
+}
+
+/* Bilder maximal in Container */
+.carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* behält das Seitenverhältnis */
+    display: block;
+}
+
+
+
+
