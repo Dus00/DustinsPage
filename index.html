@@ -77,7 +77,7 @@
                 in software engineering.
             </p>
         </section>
-        
+
         <!-- Experience Section -->
         <section id="experience" class="container my-5">
             <h2>Experience</h2>
@@ -213,6 +213,50 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="project-thumb-wrapper" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                            <img src="images/WeepingAngel_thumb.png" alt="Weeping Angel">
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="#" class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#project3Modal">
+                                    View Gallery
+                                </a>
+                            </div>
+                            <h5 class="card-title">Weeping Angel – Procedural Level Generation with WFC</h5>
+                            <p class="card-text">
+                                This project builds directly on my previous Wave Function Collapse (WFC) implementation
+                                and extends it from a purely algorithmic experiment into an interactive game prototype.
+                                While the earlier project focused on the technical foundations of WFC, this proof of
+                                concept explores its practical use in gameplay-driven procedural level generation.
+                                <br><br>
+                                The goal was to evaluate whether WFC can generate organic, coherent, and replayable
+                                levels that actively support game mechanics instead of producing abstract or purely
+                                visual results. To test this, the project uses a Weeping Angel-inspired enemy concept,
+                                where enemies only move when they are not observed by the player. This mechanic places
+                                strong structural and visibility constraints on the generated environments.
+                                <br><br>
+                                Levels are generated at runtime using a custom WFC-based system with modular tiles and
+                                explicit adjacency rules. The algorithm ensures logical spatial connections, navigable
+                                layouts, and consistent transitions between rooms while still allowing randomness and
+                                variation in each playthrough.
+                                <br><br>
+                                The project intentionally prioritizes procedural systems, algorithmic design, and
+                                gameplay integration over visual fidelity or narrative depth. It demonstrates how an
+                                abstract procedural algorithm can be transformed into a concrete game system that
+                                directly influences player experience and level design.
+                            </p>
+                            <a href="https://www.dropbox.com/scl/fo/r9s25hqwe9xidcl4zdwpk/AIdqoKa5hVrhTpVovGn10eA?rlkey=0s8f9dchm324rhjmfl0kh6imx&st=qo7vqciy&dl=0"
+                                class="btn btn-outline-primary btn-sm ms-2" target="_blank">
+                                Download Showcase
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -327,6 +371,50 @@
             </div>
         </div>
     </div>
+
+    <!-- Project 3 Modal -->
+    <div class="modal fade" id="project3Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div id="carouselProject3" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/WeepingAngel1.png" class="d-block w-100" alt="Weeping Angel Screenshot 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/WeepingAngel2.png" class="d-block w-100" alt="Weeping Angel Screenshot 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/WeepingAngel3.png" class="d-block w-100" alt="Weeping Angel Screenshot 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/WeepingAngel4.png" class="d-block w-100" alt="Weeping Angel Screenshot 4">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/WeepingAngel5.png" class="d-block w-100" alt="Weeping Angel Screenshot 5">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/blackjack6.png" class="d-block w-100" alt="Blackjack Screenshot 6">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProject3"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselProject3"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer text-center">
         <div class="container">
             <small>© 2026 Dustin Miles Görg</small>
