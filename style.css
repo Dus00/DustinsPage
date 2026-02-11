@@ -105,6 +105,12 @@ section h2 {
     color: #111;
 }
 
+.card-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
 /* Galerie-Button zentrieren (falls nicht schon) */
 .project-thumb + .card-body .d-flex {
     justify-content: center;
