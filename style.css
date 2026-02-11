@@ -82,7 +82,13 @@ section h2 {
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
-.card-body h5, .card-body h6 {
+.card-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.card-body h5 {
     color: #f1f1f1;
 }
 
@@ -103,12 +109,6 @@ section h2 {
 .card-body .btn-outline-light:hover {
     background-color: #fff;
     color: #111;
-}
-
-.card-subtitle {
-    display: block;
-    font-size: 0.9rem;
-    line-height: 1.4;
 }
 
 /* Galerie-Button zentrieren (falls nicht schon) */
